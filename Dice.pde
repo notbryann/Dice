@@ -6,7 +6,7 @@ void setup()
 void draw()
 {
 	background(192);
-	Die a = new Die(100,100);
+	Die a = new Die(0,0);
 	a.roll();
 	a.show();
 
@@ -21,14 +21,13 @@ class Die //models one single dice cube
 	
 	Die(int x, int y) //constructor
 	{
-		x=q;
-		y=w;
+		q=x;
+		w=y;
 		roll=0;
 	}
 	void roll()
 	{
-		roll=2;
-		//(int)(Math.random()*6)+1;
+		roll=(int)(Math.random()*6)+1;
 
 	}
 	void show()
@@ -37,10 +36,32 @@ class Die //models one single dice cube
 		rect(q,w,50,50,12);
 		fill(0);
 		if(roll==1){
-			circle(25,25,5);
+			circle(q+25,w+25,5);
 		}else if (roll==2){
-			circle(15,25,5);
-			circle(35,25,5);
+			circle(q+15,w+25,5);
+			circle(q+35,w+25,5);
+		}else if(roll==3){
+			circle(q+25,w+25,5);
+			circle(q+15,w+15,5);
+			circle(q+35,w+35,5);
+		}else if(roll==4){
+			circle(q+15,w+15,5);
+			circle(q+15,w+35,5);
+			circle(q+35,w+15,5);
+			circle(q+35,w+35,5);
+		}else if(roll==5){
+			circle(q+15,w+15,5);
+			circle(q+15,w+35,5);
+			circle(q+35,w+15,5);
+			circle(q+35,w+35,5);
+			circle(q+25,w+25,5);
+		}else if(roll==6){
+			circle(q+15,w+15,5);
+			circle(q+15,w+35,5);
+			circle(q+35,w+15,5);
+			circle(q+35,w+35,5);
+			circle(q+15,w+25,5);
+			circle(q+35,w+25,5);
 		}
 	}
 }
