@@ -1,3 +1,4 @@
+int total = 0;
 void setup()
 {
 	noLoop();
@@ -5,15 +6,25 @@ void setup()
 }
 void draw()
 {
-	background(192);
-	Die a = new Die(0,0);
-	a.roll();
-	a.show();
+	background(0);
+	for(int j=0; j<440; j+=50){
+		for(int i=0; i <500; i += 50){
+		Die a = new Die(i,j);
+		a.roll();
+		a.show();
+		total = total + a.roll;
+		}
+	}
+	fill(255);
+	textSize(20);
+	text("Total Dots: " + total,175,480);
+	
 
 }
 void mousePressed()
 {
 	redraw();
+	total = 0;
 }
 class Die //models one single dice cube
 {
