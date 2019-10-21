@@ -22,23 +22,23 @@ void draw()
 
 }
 void mousePressed()
-{
+{ 
 	redraw();
 	total = 0;
 }
 class Die //models one single dice cube
 {
-	int q,w,roll;
+	int q,w,iroll;
 	
 	Die(int x, int y) //constructor
 	{
 		q=x;
 		w=y;
-		roll=0;
+		iroll=0;
 	}
 	void roll()
 	{
-		roll=(int)(Math.random()*6)+1;
+		iroll=(int)(Math.random()*6)+1;
 
 	}
 	void show()
