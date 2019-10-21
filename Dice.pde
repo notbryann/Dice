@@ -12,7 +12,7 @@ void draw()
 		Die a = new Die(i,j);
 		a.roll();
 		a.show();
-		total = total + a.roll;
+		total = total + a.iroll;
 		}
 	}
 	fill(255);
@@ -46,27 +46,27 @@ class Die //models one single dice cube
 		fill(255);
 		rect(q,w,50,50,12);
 		fill(0);
-		if(roll==1){
+		if(iroll==1){
 			circle(q+25,w+25,5);
-		}else if (roll==2){
+		}else if (iroll==2){
 			circle(q+15,w+25,5);
 			circle(q+35,w+25,5);
-		}else if(roll==3){
+		}else if(iroll==3){
 			circle(q+25,w+25,5);
 			circle(q+15,w+15,5);
 			circle(q+35,w+35,5);
-		}else if(roll==4){
+		}else if(iroll==4){
 			circle(q+15,w+15,5);
 			circle(q+15,w+35,5);
 			circle(q+35,w+15,5);
 			circle(q+35,w+35,5);
-		}else if(roll==5){
+		}else if(iroll==5){
 			circle(q+15,w+15,5);
 			circle(q+15,w+35,5);
 			circle(q+35,w+15,5);
 			circle(q+35,w+35,5);
 			circle(q+25,w+25,5);
-		}else if(roll==6){
+		}else if(iroll==6){
 			circle(q+15,w+15,5);
 			circle(q+15,w+35,5);
 			circle(q+35,w+15,5);
