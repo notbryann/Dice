@@ -47,32 +47,32 @@ class Die //models one single dice cube
 		rect(q,w,50,50,12);
 		fill(0);
 		if(iroll==1){
-			circle(q+25,w+25,5);
+			ellipse(q+25,w+25,5,5);
 		}else if (iroll==2){
-			circle(q+15,w+25,5);
-			circle(q+35,w+25,5);
+			ellipse(q+15,w+25,5,5);
+			ellipse(q+35,w+25,5,5);
 		}else if(iroll==3){
-			circle(q+25,w+25,5);
-			circle(q+15,w+15,5);
-			circle(q+35,w+35,5);
+			ellipse(q+25,w+25,5,5);
+			ellipse(q+15,w+15,5,5);
+			ellipse(q+35,w+35,5,5);
 		}else if(iroll==4){
-			circle(q+15,w+15,5);
-			circle(q+15,w+35,5);
-			circle(q+35,w+15,5);
-			circle(q+35,w+35,5);
+			ellipse(q+15,w+15,5,5);
+			ellipse(q+15,w+35,5,5);
+			ellipse(q+35,w+15,5,5);
+			ellipse(q+35,w+35,5,5);
 		}else if(iroll==5){
-			circle(q+15,w+15,5);
-			circle(q+15,w+35,5);
-			circle(q+35,w+15,5);
-			circle(q+35,w+35,5);
-			circle(q+25,w+25,5);
+			ellipse(q+15,w+15,5,5);
+			ellipse(q+15,w+35,5,5);
+			ellipse(q+35,w+15,5,5);
+			ellipse(q+35,w+35,5,5);
+			ellipse(q+25,w+25,5,5);
 		}else if(iroll==6){
-			circle(q+15,w+15,5);
-			circle(q+15,w+35,5);
-			circle(q+35,w+15,5);
-			circle(q+35,w+35,5);
-			circle(q+15,w+25,5);
-			circle(q+35,w+25,5);
+			ellipse(q+15,w+15,5,5);
+			ellipse(q+15,w+35,5,5);
+			ellipse(q+35,w+15,5,5);
+			ellipse(q+35,w+35,5,5);
+			ellipse(q+15,w+25,5,5);
+			ellipse(q+35,w+25,5,5);
 		}
 	}
 }
