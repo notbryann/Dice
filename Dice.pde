@@ -45,7 +45,7 @@ class Die //models one single dice cube
 	{
 		fill(255);
 		rect(q,w,50,50,12);
-		fill(0);
+		fill(1);
 		if(iroll==1){
 			ellipse(q+25,w+25,5,5);
 		}else if (iroll==2){
